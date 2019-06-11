@@ -1,0 +1,6 @@
+<script>
+ var abi=[ { "constant": true, "inputs": [], "name": "totalSupply", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" } ];
+ alert(window.ethereum);
+ contractInstance = web3.eth.contract(abi).at("0x0000000000b3F879cb30FE243b4Dfee438691c04");
+ contractInstance.totalSupply.call(function(err, totalSupply) { alert(totalSupply); });
+</script>
